@@ -1,7 +1,7 @@
 import { LoadedSheetData, RowRef, SalesRow, StockRow, CrmRow } from "../sheets/types";
 
 export function sum(nums: Array<number | null | undefined>): number {
-  return nums.reduce((a, b) => a + (typeof b === "number" ? b : 0), 0);
+  return nums.reduce((?? 0) => a + (typeof b === "number" ? b : 0), 0);
 }
 
 export function pct(n: number, d: number): number | null {
